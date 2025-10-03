@@ -1,0 +1,46 @@
+/* NewCollections.css */
+
+.newcollections {
+  width: 100%;
+  padding: 40px 80px;
+  background: #f8f9fa; /* light background */
+  text-align: center;
+}
+
+.newcollections h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.newcollections hr {
+  width: 80px;
+  height: 4px;
+  margin: 0 auto 40px auto;
+  background: #ff4141; /* accent color */
+  border: none;
+  border-radius: 2px;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .newcollections {
+    padding: 20px 30px;
+  }
+
+  .newcollections h1 {
+    font-size: 2rem;
+  }
+
+  .collections {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,119 @@
+/* Popular Section */
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-height: 90vh;
+  padding: 4rem 6%;
+  background: linear-gradient(135deg, #bcf8ed, #ece4e4);
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading with Gradient */
+.popular h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff3f6c, #ff9124);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari */
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  animation: slideDown 1s ease;
+}
+
+/* Divider */
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  border: none;
+  margin-bottom: 2rem;
+  animation: growLine 1s ease-in-out;
+}
+
+/* Items Container */
+.popular-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1300px;
+  animation: fadeUp 1.2s ease-in-out;
+}
+
+/* Item Card Styling */
+.popular-item > * {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Item Hover Effect */
+.popular-item > *:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes growLine {
+  from { width: 0; opacity: 0; }
+  to { width: 200px; opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .popular {
+    padding: 3rem 5%;
+  }
+
+  .popular h1 {
+    font-size: 2.2rem;
+  }
+
+  .popular-item {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .popular {
+    padding: 2.5rem 4%;
+  }
+
+  .popular h1 {
+    font-size: 1.8rem;
+  }
+
+  .popular-item {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-item > * {
+    width: 100%;
+    max-width: 300px;
+  }
+}
