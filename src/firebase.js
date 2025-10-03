@@ -3,15 +3,15 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 
-// Your web app's Firebase configuration
+// Firebase configuration using environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyDCL3kfC4qKrv82iXBl5JKTgRxO1t7Y1-I",
-  authDomain: "ecommerce-6f8bc.firebaseapp.com",
-  projectId: "ecommerce-6f8bc",
-  storageBucket: "ecommerce-6f8bc.appspot.com", // fix typo: .firebasestorage.app -> .appspot.com
-  messagingSenderId: "64976034462",
-  appId: "1:64976034462:web:c8a9d2952e4220475db98f",
-  measurementId: "G-0NJN6E17QT"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
