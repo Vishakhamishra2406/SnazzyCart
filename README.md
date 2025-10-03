@@ -1,13 +1,27 @@
-# React + Vite
+# SnazzyCart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SnazzyCart is a **modern e-commerce website** built to demonstrate the implementation of **React**, **Vite**, **CSS**, and **JavaScript** in a real-world project. This project serves as a learning experience to understand how React works for building interactive and dynamic front-end applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Technologies Used**
+- **React**: For building reusable and interactive UI components.  
+- **Vite**: As the development server and build tool for faster development.  
+- **JavaScript**: For handling logic, data manipulation, and dynamic rendering.  
+- **CSS**: For styling components and making the UI visually appealing.
 
-## Expanding the ESLint configuration
+---
+
+## **Project Features**
+- Responsive e-commerce design with **multiple product categories**.  
+- Product listing with images, names, and categories.  
+- Shopping cart functionality to add/remove items.  
+- Related products and popular products sections for better UX.  
+- Integration of images and assets to create a visually attractive interface.  
+
+---
+
+
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
  ## Screenshots
